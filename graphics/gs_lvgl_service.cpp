@@ -11,6 +11,8 @@
 #include <array>
 #include <memory>
 
+#include "lvgl_test.hpp"
+
 namespace Graphics
 {
 
@@ -112,6 +114,7 @@ private:
     void initMainWindow()
     {
         // TODO create the lvlg task for ellaped event processing
+        lv_ex_tileview_1();
     }
 
 private:

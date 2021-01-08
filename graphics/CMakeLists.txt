@@ -16,8 +16,9 @@ target_include_directories(
 target_sources(
     ${TARGET_NAME}
     PRIVATE
-    ${CMAKE_CURRENT_LIST_DIR}/gs_lvgl_service.cpp
-    )
+    gs_lvgl_service.cpp
+    lvgl_test.hpp
+)
 
 target_link_libraries(
     ${TARGET_NAME}
