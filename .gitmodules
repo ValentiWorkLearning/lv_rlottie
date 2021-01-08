@@ -1,0 +1,14 @@
+[submodule "graphics/lvgl_lib/lvgl_driver_backend/lv_drivers"]
+	path = graphics/lvgl_lib/lvgl_driver_backend/lv_drivers
+	url = https://github.com/littlevgl/lv_drivers.git
+[submodule "graphics/lvgl_lib/lvgl_library/lvgl"]
+	path = graphics/lvgl_lib/lvgl_library/lvgl
+	url = https://github.com/lvgl/lvgl.git
+	branch = feat/new-fs-api
+[submodule "graphics/lvgl_lib/lvgl_filesystem_if/lv_fs_if"]
+	path = graphics/lvgl_lib/lvgl_filesystem_if/lv_fs_if
+	url = https://github.com/lvgl/lv_fs_if.git
+	branch = new-api
+[submodule "graphics/rlottie_samsung/rlottie"]
+	path = graphics/rlottie_samsung/rlottie
+	url = https://github.com/Samsung/rlottie.git

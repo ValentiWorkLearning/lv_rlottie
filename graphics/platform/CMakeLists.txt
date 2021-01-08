@@ -9,8 +9,6 @@ target_link_libraries(
     lvgl_lib
     UtilsLibrary
     logger_service
-    drivers_ih
-    etl
 )
 
 target_compile_definitions(
@@ -22,6 +20,5 @@ target_link_libraries(
     graphics_backend
     PRIVATE
     lvgl_drivers
-    fmt
 )
 

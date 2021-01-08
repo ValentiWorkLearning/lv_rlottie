@@ -9,12 +9,11 @@
 //#include <vector>
 #include <algorithm>
 #include <string>
-#include <etl/vector.h>
 
 namespace Simple {
 
 template<typename Type, const size_t StorageSize = 3>
-using TStorageType = etl::vector<Type, StorageSize>;
+using TStorageType = std::vector<Type>;
 
 namespace Lib {
 

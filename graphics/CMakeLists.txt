@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.14)
-set (TARGET_NAME watch_graphics)
+set (TARGET_NAME rlottie_graphics)
 
 add_library( ${TARGET_NAME} STATIC )
 
 add_subdirectory (lvgl_lib)
 add_subdirectory (platform)
+add_subdirectory (rlottie_samsung)
 
 target_include_directories(
     ${TARGET_NAME}

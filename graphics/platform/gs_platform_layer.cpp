@@ -99,7 +99,7 @@ PlatformBackend::executeLvTaskHandler()
 #include "lv_drivers/indev/mouse.h"
 #include "lv_drivers/indev/keyboard.h"
 
-#include <fmt/format.h>
+#include "lv_fs_if/lv_fs_if.h"
 
 namespace Graphics
 {
@@ -131,6 +131,7 @@ PlatformBackend::initPlatformGfxTimer()
     );
     m_tickThread.detach();
     indevPlatformInit();
+    initFilesystem();
 }
 
 void
@@ -156,6 +157,12 @@ PlatformBackend::indevPlatformInit()
         ,   LV_TASK_PRIO_MID
         ,   nullptr
     );
+}
+
+void
+PlatformBackend::initFilesystem()
+{
+    lv_fs_if_init();
 }
 
 void

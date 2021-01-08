@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(nordic-template C CXX ASM)
+project(rlottie-lvgl C CXX ASM)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
+add_subdirectory(utils)
 add_subdirectory(graphics)
+add_subdirectory(logger)
 
 set (APP_TARGET RlottieLvgl)
 add_executable(${APP_TARGET} ${PROJECT_SOURCES})
@@ -22,6 +24,7 @@ target_link_libraries(
     PRIVATE
     logger_service
     graphics_backend
+    rlottie_graphics
 )
 
 target_compile_features(

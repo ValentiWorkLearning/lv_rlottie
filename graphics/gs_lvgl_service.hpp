@@ -7,12 +7,6 @@ namespace Graphics
 {
     class PlatformBackend;
 };
-
-namespace Graphics::MainWindow
-{
-    class IGsMainWindowModel;
-};
-
 namespace Graphics
 {
 
@@ -26,12 +20,6 @@ public:
     ~LvglGraphicsService();
 
     void executeGlTask();
-
-public:
-
-    Graphics::MainWindow::IGsMainWindowModel& getMainWindow();
-
-    Graphics::MainWindow::IGsMainWindowModel& getMainWindow() const;
 
 private:
 

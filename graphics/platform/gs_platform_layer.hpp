@@ -37,7 +37,7 @@ private:
 private:
 
     void indevPlatformInit();
-
+    void initFilesystem();
     void memoryMonitor(lv_task_t* _param);
 
 private:
