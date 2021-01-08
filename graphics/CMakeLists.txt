@@ -6,6 +6,7 @@ add_library( ${TARGET_NAME} STATIC )
 add_subdirectory (lvgl_lib)
 add_subdirectory (platform)
 add_subdirectory (rlottie_samsung)
+add_subdirectory (lv_rlottie)
 
 target_include_directories(
     ${TARGET_NAME}
@@ -27,6 +28,7 @@ target_link_libraries(
     UtilsLibrary
     logger_service
     graphics_backend
+    lv_rlottie
 )
 
 target_link_options(

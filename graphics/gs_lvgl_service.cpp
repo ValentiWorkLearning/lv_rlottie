@@ -114,7 +114,8 @@ private:
     void initMainWindow()
     {
         // TODO create the lvlg task for ellaped event processing
-        lv_ex_tileview_1();
+        //lv_ex_tileview_1();
+        rlottie_test();
     }
 
 private:
