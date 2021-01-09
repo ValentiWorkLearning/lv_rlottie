@@ -52,7 +52,7 @@ static lv_signal_cb_t ancestor_signal;
   *   GLOBAL FUNCTIONS
   **********************/
 
-lv_obj_t* lv_rlottie_create_from_file(lv_obj_t* parent, const char* path)
+lv_obj_t* lv_rlottie_create_from_file(lv_obj_t* parent, lv_coord_t width, lv_coord_t height, const char* path)
 {
 
     lv_obj_t* img = lv_img_create(parent, NULL);
@@ -69,8 +69,8 @@ lv_obj_t* lv_rlottie_create_from_file(lv_obj_t* parent, const char* path)
     ext->framerate = lottie_animation_get_framerate(ext->animation);
     ext->current_frame = 0;
 
-    lv_coord_t obj_width = lv_obj_get_width(parent);
-    lv_coord_t obj_height = lv_obj_get_height(parent);
+    lv_coord_t obj_width = LV_MATH_MIN(width,lv_obj_get_width(parent));
+    lv_coord_t obj_height = LV_MATH_MIN(height,lv_obj_get_height(parent));
 
     ext->scanline_width = obj_width * LV_COLOR_DEPTH / 8;
 

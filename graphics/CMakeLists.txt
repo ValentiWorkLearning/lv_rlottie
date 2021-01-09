@@ -44,3 +44,8 @@ target_compile_options(
     $<$<CONFIG:Release>:-Os>
     ${COMMON_FLAGS}
 )
+
+set( EXAMPLES_PATH ${CMAKE_CURRENT_LIST_DIR}//rlottie_samsung//rlottie//example )
+get_filename_component(EXAMPLES_PATH_NORMALIZED "${EXAMPLES_PATH}" ABSOLUTE)
+
+target_compile_definitions(${TARGET_NAME} PRIVATE EXAMPLES_DIR="${EXAMPLES_PATH_NORMALIZED}" )

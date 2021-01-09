@@ -31,7 +31,7 @@ extern "C" {
  * GLOBAL PROTOTYPES
  **********************/
 
-lv_obj_t * lv_rlottie_create_from_file(lv_obj_t * parent, const char * path);
+lv_obj_t * lv_rlottie_create_from_file(lv_obj_t * parent,lv_coord_t width, lv_coord_t height, const char * path);
 
 /**********************
  *      MACROS
