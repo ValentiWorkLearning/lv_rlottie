@@ -13,7 +13,7 @@ target_include_directories(
 target_compile_features(
     logger_service
     PUBLIC
-    cxx_std_20
+    cxx_std_17
 )
 
 target_link_libraries(

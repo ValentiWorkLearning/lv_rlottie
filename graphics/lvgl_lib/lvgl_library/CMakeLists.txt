@@ -9,7 +9,7 @@ target_compile_options( ${TARGET_NAME} PUBLIC /wd4576 /std:c++latest )
 target_compile_features(
     ${TARGET_NAME}
     PUBLIC
-    cxx_std_20
+    cxx_std_17
 )
 #set_target_properties( ${TARGET_NAME} PROPERTIES LANGUAGE C)
 

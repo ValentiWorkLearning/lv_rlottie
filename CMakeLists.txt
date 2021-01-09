@@ -30,8 +30,5 @@ target_link_libraries(
 target_compile_features(
     ${APP_TARGET}
     PRIVATE
-    cxx_std_20
+    cxx_std_17
 )
-
-option( ENABLE_SANITIZE_BUILD "Build simultator with ASAN support" OFF)
-list(APPEND EXTRA_LIBS vcruntime user32 gdi32 winmm imm32 ole32 oleaut32 version uuid advapi32 setupapi shell32)
