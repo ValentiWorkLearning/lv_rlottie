@@ -170,15 +170,12 @@ PlatformBackend::memoryMonitor(lv_task_t* _param)
     lv_mem_monitor_t moninor{};
     lv_mem_monitor( &moninor );
 
-    // LOG_DEBUG_ENDL(
-    //         fmt::format(
-    //             "Used: {} , {}% fragmentation: {}, biggest free: {}"
-    //          ,   static_cast<std::uint32_t>( moninor.total_size - moninor.free_size )
-    //          ,   static_cast<std::uint32_t>( moninor.used_pct )
-    //          ,   static_cast<std::uint32_t>( moninor.frag_pct )
-    //          ,   static_cast<std::uint32_t>( moninor.free_biggest_size )
-    //         )
-    //     );
+    printf("Used: %d, %d '%' fragmentation : %d, biggest free : %d",
+        static_cast<std::uint32_t>(moninor.total_size - moninor.free_size)
+        , static_cast<std::uint32_t>(moninor.used_pct)
+        , static_cast<std::uint32_t>(moninor.frag_pct)
+        , static_cast<std::uint32_t>(moninor.free_biggest_size)
+    );
 }
 
 void
