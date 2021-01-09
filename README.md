@@ -1,5 +1,7 @@
 # Rlottie animation player for LVGL
 
+![CI](https://github.com/ValentiWorkLearning/lv_rlottie/workflows/CI/badge.svg)
+
 Allows to use Rlottie animations in LVGL
 
 Uses [Samsung/rlottie](https://github.com/Samsung/rlottie) library with C-api header
