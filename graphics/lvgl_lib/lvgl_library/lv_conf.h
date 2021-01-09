@@ -758,7 +758,7 @@ typedef void * lv_obj_user_data_t;
 #endif
 
 /*File system interface*/
-#define LV_USE_FS_IF	1
+#define LV_USE_FS_IF	0
 #if LV_USE_FS_IF
 #  define LV_FS_IF_FATFS    '\0'
 #  define LV_FS_IF_PC       'H'

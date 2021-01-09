@@ -99,8 +99,6 @@ PlatformBackend::executeLvTaskHandler()
 #include "lv_drivers/indev/mouse.h"
 #include "lv_drivers/indev/keyboard.h"
 
-#include "lv_fs_if/lv_fs_if.h"
-
 namespace Graphics
 {
 
@@ -162,7 +160,6 @@ PlatformBackend::indevPlatformInit()
 void
 PlatformBackend::initFilesystem()
 {
-    lv_fs_if_init();
 }
 
 void

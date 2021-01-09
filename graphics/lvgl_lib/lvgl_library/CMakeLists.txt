@@ -171,9 +171,3 @@ target_compile_options(
     $<$<CONFIG:Release>:-Os>
     ${COMMON_FLAGS}
 )
-
-target_link_libraries(
-    ${TARGET_NAME}
-    PUBLIC
-    lvgl_fs_api
-)
