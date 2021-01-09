@@ -8,6 +8,10 @@ Compatible with LVGL main branch. Tested with the latest LVGL/master branch
 
 Library simulator requires C++17-compatible compiler, CMake 3.14+ and Conan package manager
 
+
+
+<img src="https://github.com/ValentiWorkLearning/lv_rlottie/blob/master/gif/lv_rlottie.gif" alt="lv_rlottie" style="zoom:80%;" />
+
 ## Get started
 
 - Download or clone this repository
