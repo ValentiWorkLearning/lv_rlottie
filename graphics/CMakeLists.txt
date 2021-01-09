@@ -20,6 +20,7 @@ target_sources(
     gs_lvgl_service.cpp
     lvgl_test.hpp
     lvgl_material_loader.hpp
+    lvgl_fingerprint_raw.hpp
 )
 
 target_link_libraries(

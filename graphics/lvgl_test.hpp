@@ -2,7 +2,9 @@
 
 #include <lvgl.h>
 #include "lv_rlottie/lv_rlottie.h"
+
 #include "lvgl_material_loader.hpp"
+#include "lvgl_fingerprint_raw.hpp"
 
 inline void rlottie_test(void)
 {
@@ -18,4 +20,8 @@ inline void rlottie_test(void)
 
     lv_obj_t* rlottie_anim_loader_from_raw = lv_rlottie_create_from_raw(lv_scr_act(), 100, 100,MaterialLoaderRes);
     lv_obj_set_x(rlottie_anim_loader_from_raw, 150);
+
+    lv_obj_t* rlottie_anim_fingerprint_raw = lv_rlottie_create_from_raw(lv_scr_act(), 100, 100, FingerprintRaw);
+    lv_obj_set_x(rlottie_anim_fingerprint_raw, 30);
+    lv_obj_set_y(rlottie_anim_fingerprint_raw, 150);
 }
