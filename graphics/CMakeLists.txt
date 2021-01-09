@@ -19,6 +19,7 @@ target_sources(
     PRIVATE
     gs_lvgl_service.cpp
     lvgl_test.hpp
+    lvgl_material_loader.hpp
 )
 
 target_link_libraries(
