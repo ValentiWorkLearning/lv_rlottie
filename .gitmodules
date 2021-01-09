@@ -4,7 +4,7 @@
 [submodule "graphics/lvgl_lib/lvgl_library/lvgl"]
 	path = graphics/lvgl_lib/lvgl_library/lvgl
 	url = https://github.com/lvgl/lvgl.git
-	branch = feat/new-fs-api
+	branch = master
 [submodule "graphics/rlottie_samsung/rlottie"]
 	path = graphics/rlottie_samsung/rlottie
 	url = https://github.com/Samsung/rlottie.git
