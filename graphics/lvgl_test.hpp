@@ -51,5 +51,6 @@ inline void lv_ex_tileview_1(void)
 
 inline void rlottie_test(void)
 {
-    lv_obj_t* rlottie_anim = lv_rlottie_create_from_file(lv_scr_act(), "D://GradWork//coolthings//lvgl_rlottie//graphics//rlottie_samsung//rlottie//example//resource//3d.json");
+    //lv_obj_t* rlottie_anim = lv_rlottie_create_from_file(lv_scr_act(), "D://GradWork//coolthings//lvgl_rlottie//graphics//rlottie_samsung//rlottie//example//resource//3d.json");
+    lv_obj_t* rlottie_anim = lv_rlottie_create_from_file(lv_scr_act(), "D://GradWork//coolthings//lvgl_rlottie//graphics//rlottie_samsung//rlottie//example//resource//insta_camera.json");
 }

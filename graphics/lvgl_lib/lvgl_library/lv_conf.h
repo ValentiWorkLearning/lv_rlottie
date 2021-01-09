@@ -20,8 +20,8 @@
  *====================*/
 
 /* Maximal horizontal and vertical resolution to support by the library.*/
-#define LV_HOR_RES_MAX          (480)
-#define LV_VER_RES_MAX          (320)
+#define LV_HOR_RES_MAX          (240)
+#define LV_VER_RES_MAX          (240)
 
 /* Color depth:
  * - 1:  1 byte per pixel
@@ -80,7 +80,7 @@ typedef int16_t lv_coord_t;
 #define LV_MEM_CUSTOM      0
 #if LV_MEM_CUSTOM == 0
 /* Size of the memory used by `lv_mem_alloc` in bytes (>= 2kB)*/
-#  define LV_MEM_SIZE (256 * 1024)
+#  define LV_MEM_SIZE 700000 // (256 * 1024)
 
 /* Compiler prefix for a big array declaration */
 #  define LV_MEM_ATTR
@@ -321,7 +321,7 @@ typedef void * lv_indev_drv_user_data_t;            /*Type of user data in the i
  * LV_LOG_LEVEL_ERROR       Only critical issue, when the system may fail
  * LV_LOG_LEVEL_NONE        Do not log anything
  */
-#  define LV_LOG_LEVEL    LV_LOG_LEVEL_WARN
+#  define LV_LOG_LEVEL    LV_LOG_LEVEL_TRACE
 
 /* 1: Print the log with 'printf';
  * 0: user need to register a callback with `lv_log_register_print_cb`*/
