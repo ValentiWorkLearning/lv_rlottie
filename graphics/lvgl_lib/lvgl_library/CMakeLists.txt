@@ -4,7 +4,7 @@ set (TARGET_NAME lvgl_lib)
 
 add_library( ${TARGET_NAME} STATIC )
 
-target_compile_options( ${TARGET_NAME} PUBLIC /wd4576 /std:c++latest )
+target_compile_options( ${TARGET_NAME} PUBLIC $<$<CXX_COMPILER_ID:MSVC>:/wd4576 /std:c++latest> )
 
 target_compile_features(
     ${TARGET_NAME}

@@ -66,4 +66,4 @@ target_link_libraries(
     PRIVATE
     lvgl_lib
 )
-target_link_libraries(${TARGET_NAME} PUBLIC CONAN_PKG::sdl2)
+target_link_libraries(${TARGET_NAME} PUBLIC CONAN_PKG::sdl)
